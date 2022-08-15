@@ -260,7 +260,7 @@ def dialog_2():
     xxx = '0'
     while xxx != 'exit':
         xxx = str(input(t))
-
+    os.system('clear')
     print(bannner_menu)
 
     while xxx != '2':
@@ -313,6 +313,7 @@ def dialog_3():
 
 
 def scena_ddos():
+    os.system('clear')
     xxx = '0'
     print(bannner_menu)
 
@@ -331,12 +332,12 @@ def scena_ddos():
 
     loading(2)
 
-    print('Введите IP жертвы:\n')
+    print('Введите IP жертвы:')
 
     while xxx != '101.123.13.121':
         xxx = str(input(c))
 
-    print('Введите кол-во ботов:\n')
+    print('\nВведите кол-во ботов:')
 
     while xxx != '100000':
             xxx = str(input(c))
@@ -362,6 +363,7 @@ def scena_ddos():
         xxx = str(input(c))
 
 def dialog_4():
+    os.system('clear')
     print(bannner_menu)
     xxx = '0'
 
@@ -372,25 +374,25 @@ def dialog_4():
 
     txt = 'Boss: Молодец...\n'
     print_text_persona(txt, 0.05)
-
+    time.sleep(1)
     txt = 'Boss: Молодец БЛ*ТЬ!\n'
     print_text_persona(txt, 0.05)
-
-    txt = 'Boss: Я КОМУ ГОВОРИЛ ИЗМЕНИТЬ DNS СЕРВЕР?!\n'
+    time.sleep(1)
+    txt = 'Boss: Я КОМУ ГОВОРИЛ ИЗМЕНИТЬ DNS СЕРВЕР?!'
     print_text_persona(txt, 0.02)
-
+    time.sleep(1)
     txt = e + '...\n'
     print_text_persona(txt, 0.1)
 
     txt = 'Boss: всё...\n'
     print_text_persona(txt,0.1) 
-
-    txt = 'Boss: нам п*здeц)\n'
+    time.sleep(1)
+    txt = 'Boss: нам п*здeц)'
     print_text_persona(txt,0.1)
-
+    time.sleep(1)
     txt = e + 'Нужно отклчить наши сервера\n'
     print_text_persona(txt, 0.05)
-
+    
     txt = 'Boss: Да делай, что хочешь\n'
     print_text_persona(txt,0.1)
 
@@ -404,7 +406,7 @@ def servera_off():
 
     while xxx != '3':
         xxx = str(input(t))
-    
+    os.system('clear')
     print("""Управление серверами
 
     1. Выключить серверы
@@ -424,15 +426,15 @@ def servera_off():
         txt = 'Сервера включены\n'
         print_text_persona(txt,0.1)
         txt = '\nУ вас 1 новое сообщение!\n'
-        print_text_persona(txt,0.5)
+        print_text_persona(txt,0.1)
         while xxx != 'exit':
             xxx = str(input(t))
-
+        os.system('clear')
         print(bannner_menu)
 
         while xxx != '2':
             xxx = str(input(t))
-
+        os.system('clear')
         txt = 'Анонимус: Ты остановил атаку?\n'
         print_text_persona(txt, 0.05)
         time.sleep(1)
@@ -504,7 +506,7 @@ def servera_off():
         time.sleep(2)
 
         os.system('clear')
-        print(Fore.GREEE)
+        print(Fore.GREEN)
 
 
         print('Вы прошли игру на плохую концовку((')
